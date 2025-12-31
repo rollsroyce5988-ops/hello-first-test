@@ -9,7 +9,17 @@
     <p>這是我用 GitHub 寫的第一個程式。</p>
     
     <button onclick="sayHello()" style="padding: 10px; font-size: 16px;">按我試試</button>
-    
+    <p>點數：<span id="count">0</span></p>
+<button onclick="addOne()">+1</button>
+
+<script>
+let count = 0;
+function addOne() {
+    count++;
+    document.getElementById("count").innerText = count;
+}
+</script>
+
     <script>
         function sayHello() {
             alert("你好！程式開始跑了！");
